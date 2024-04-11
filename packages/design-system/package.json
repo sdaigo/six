@@ -1,0 +1,35 @@
+{
+  "name": "@repo/design-system",
+  "version": "0.0.0",
+  "private": true,
+  "main": "src/index.ts",
+  "files": ["dist", "src"],
+  "scripts": {
+    "prepare": "panda codegen",
+    "build": "tsup",
+    "studio": "panda studio",
+    "lint": "biome lint ./src"
+  },
+  "dependencies": {
+    "@ark-ui/anatomy": "^3.0.0",
+    "ts-pattern": "^5.1.1"
+  },
+  "devDependencies": {
+    "@pandacss/dev": "^0.37.2",
+    "@pandacss/preset-panda": "^0.37.2",
+    "@pandacss/studio": "^0.37.2",
+    "tsup": "^8.0.2",
+    "typescript": "^5"
+  },
+  "peerDependencies": {
+    "@pandacss/dev": "^0.37.2",
+    "@pandacss/types": "^0.37.2"
+  },
+  "tsup": {
+    "entry": ["src/index.ts"],
+    "clean": true,
+    "dts": true,
+    "sourcemap": true,
+    "format": ["esm", "cjs"]
+  }
+}

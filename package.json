@@ -1,5 +1,5 @@
 {
-  "name": "root",
+  "name": "six",
   "type": "module",
   "private": true,
   "workspaces": ["packages/*", "apps/*"],
@@ -7,7 +7,8 @@
     "postinstall": "lefthook install",
     "design-system": "bun run --cwd packages/design-system",
     "ui": "bun run --cwd packages/ui",
-    "web": "bun run --cwd apps/web"
+    "web": "bun run --cwd apps/web",
+    "lint": "turbo lint"
   },
   "dependencies": {
     "prettier": "^3.2.5",

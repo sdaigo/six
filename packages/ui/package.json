@@ -6,6 +6,7 @@
     "prepare": "panda codegen",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "dev": "storybook dev -p 6006",
     "lint": "biome lint ./src"
   },
   "dependencies": {
