@@ -8,6 +8,7 @@
     "design-system": "bun run --cwd packages/design-system",
     "ui": "bun run --cwd packages/ui",
     "web": "bun run --cwd apps/web",
+    "blog": "bun run --cwd apps/blog",
     "lint": "turbo lint",
     "build": "turbo build"
   },
