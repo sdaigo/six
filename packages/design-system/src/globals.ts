@@ -7,9 +7,9 @@ export const globalCss = defineGlobalStyles({
     textRendering: "optimizeLegibility",
     WebkitFontSmoothing: "antialiased",
     WebkitTextSizeAdjust: "100%",
+    fontFamily: "sans",
   },
   body: {
-    background: "background",
     color: "foreground",
   },
   "*, *::before, *::after": {

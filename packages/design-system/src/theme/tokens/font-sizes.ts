@@ -9,4 +9,5 @@ export const fontSizes = defineTokens.fontSizes({
   md: { value: "1.25rem" },
   base: { value: "1rem" },
   sm: { value: "0.875rem" },
+  xs: { value: "0.8rem" },
 });
