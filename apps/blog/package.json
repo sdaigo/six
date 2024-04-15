@@ -19,7 +19,8 @@
     "next-contentlayer": "^0.3.4",
     "lucide-react": "^0.367.0",
     "@mobily/ts-belt": "^3.13.1",
-    "date-fns": "^3.6.0"
+    "date-fns": "^3.6.0",
+    "github-markdown-css": "^5.5.1"
   },
   "devDependencies": {
     "@pandacss/dev": "^0.37.2",

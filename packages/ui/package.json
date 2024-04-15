@@ -35,5 +35,8 @@
     "typescript": "5.4.3",
     "vite": "5.2.7",
     "vite-tsconfig-paths": "4.3.2"
+  },
+  "exports": {
+    ".": "./src/components/index.ts"
   }
 }

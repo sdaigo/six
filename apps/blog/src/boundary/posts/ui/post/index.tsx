@@ -1,8 +1,7 @@
-import { Mdx } from "@/boundary/shared/ui/mdx-component";
+import { formatDate } from "@/boundary/posts/presenter/post";
+import { Mdx } from "@/boundary/shared/ui/mdx/mdx-component";
 import type { Post } from "@/contentlayer/generated";
 import { Container } from "@/styled-system/jsx";
-
-import { formatDate } from "@/boundary/posts/presenter/post";
 import * as styles from "./styles";
 
 export default function Single({ post }: { post: Post }) {
