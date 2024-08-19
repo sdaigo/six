@@ -3,6 +3,7 @@ import { defineSemanticTokens } from "@pandacss/dev";
 export const colors = defineSemanticTokens.colors({
   accent: {
     DEFAULT: { value: "{colors.ultra.950}" },
+    inverted: { value: "{colors.white}" },
     fg: { value: "{colors.ultra.50}" },
     emphasized: { value: "{colors.ultra.800}" },
     muted: { value: "{colors.ultra.700}" },
@@ -17,11 +18,11 @@ export const colors = defineSemanticTokens.colors({
     disabled: { value: "{colors.neutral.200}" },
   },
   background: {
-    DEFAULT: { value: "{colors.white}" },
-    canvas: { value: "{colors.neutral.50}" },
-    muted: { value: "{colors.neutral.200}" },
-    subtle: { value: "{colors.neutral.100}" },
-    disabled: { value: "{colors.neutral.200}" },
+    DEFAULT: { value: "{colors.neutral.50}" },
+    canvas: { value: "{colors.neutral.100}" },
+    muted: { value: "{colors.neutral.400}" },
+    subtle: { value: "{colors.neutral.200}" },
+    disabled: { value: "{colors.neutral.300}" },
   },
   border: {
     DEFAULT: { value: "{colors.neutral.200}" },
@@ -30,7 +31,7 @@ export const colors = defineSemanticTokens.colors({
     accent: { value: "{colors.ultra.950}" },
     disabled: { value: "{colors.neutral.200}" },
   },
-  error: {
+  danger: {
     background: { value: "{colors.red.50}" },
     foreground: { value: "{colors.red.500}" },
   },

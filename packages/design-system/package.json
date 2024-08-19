@@ -5,10 +5,10 @@
   "main": "src/index.ts",
   "files": ["dist", "src"],
   "scripts": {
-    "prepare": "panda codegen",
+    "prepare": "bun panda codegen",
     "build": "tsup",
-    "studio": "panda studio",
-    "lint": "biome lint ./src"
+    "dev": "bun panda studio",
+    "check-types": "tsc --noEmit"
   },
   "dependencies": {
     "@ark-ui/anatomy": "^3.0.0",
@@ -25,11 +25,7 @@
     "@pandacss/dev": "^0.37.2",
     "@pandacss/types": "^0.37.2"
   },
-  "tsup": {
-    "entry": ["src/index.ts"],
-    "clean": true,
-    "dts": true,
-    "sourcemap": true,
-    "format": ["esm", "cjs"]
+  "exports": {
+    ".": "./src/index.ts"
   }
 }

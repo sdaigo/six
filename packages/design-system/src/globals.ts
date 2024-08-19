@@ -11,6 +11,7 @@ export const globalCss = defineGlobalStyles({
   },
   body: {
     color: "foreground",
+    bg: "background",
   },
   "*, *::before, *::after": {
     borderColor: "border",

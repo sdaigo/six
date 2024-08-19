@@ -1,23 +1,21 @@
 {
   "name": "six",
-  "type": "module",
   "private": true,
   "workspaces": ["packages/*", "apps/*"],
   "scripts": {
     "postinstall": "lefthook install",
-    "design-system": "bun run --cwd packages/design-system",
-    "ui": "bun run --cwd packages/ui",
-    "web": "bun run --cwd apps/web",
-    "blog": "bun run --cwd apps/blog",
-    "lint": "turbo lint",
-    "build": "turbo build"
+    "dev": "bun turbo dev",
+    "test": "bun turbo test",
+    "format-lint": "bun biome check ./packages",
+    "format-lint:fix": "bun biome check --write ./packages",
+    "check-types": "bun turbo check-types",
+    "build": "bun turbo build"
   },
   "dependencies": {
-    "prettier": "^3.2.5",
-    "@biomejs/biome": "1.6.3",
+    "@biomejs/biome": "1.8.3",
     "lefthook": "^1.6.8",
-    "turbo": "1.13.2",
-    "typescript": "5.4.3"
+    "turbo": "^2.0.14",
+    "typescript": "^5.5.4"
   },
-  "packageManager": "bun@1.0.35"
+  "packageManager": "bun@1.1.22"
 }
